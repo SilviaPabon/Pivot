@@ -3,13 +3,13 @@ const controller = {};
 //const pool = require('../database/database'); 
 
 controller.signup = (req, res) => {
-    res.render('/src/index.html');
+    res.render('index');
 };
 
-/* controller.signupPost =  passport.authenticate('local.signup', {
-    successRedirect: '/users/signin',
-    failureRedirect: '/users/signup',
+controller.signupPost =  passport.authenticate('local.signup', {
+    successRedirect: '/signin',
+    failureRedirect: '/',
     failureFlash: true
-}); */
+});
 
 module.exports = controller; 
