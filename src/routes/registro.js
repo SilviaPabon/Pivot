@@ -6,3 +6,7 @@ const controller = require('../controller/registroUsuarios.js');
 router.get('/',  controller.signup);
 
 router.post('/', controller.signupPost);
+
+router.get('/welcome',  controller.welcome);
+
+module.exports = router;
